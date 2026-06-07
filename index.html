@@ -49,6 +49,17 @@
     .underline-terra.center::after { margin-left: auto; margin-right: auto; }
     .fade-in { opacity: 0; transform: translateY(16px); transition: all .6s ease; }
     .fade-in.show { opacity: 1; transform: none; }
+
+    /* Mockups téléphone du hero */
+    .phone-img {
+      width: 100%; display: block;
+      border-radius: 26px;
+      border: 5px solid #1d1812;
+      box-shadow: 0 22px 45px -12px rgba(43,36,32,.35), 0 6px 14px rgba(43,36,32,.12);
+      background: #1d1812;
+    }
+    .phone { transition: transform .4s ease; }
+    .phone:hover { transform: translateY(-6px) rotate(0deg) !important; z-index: 30; }
   </style>
 </head>
 
@@ -75,25 +86,49 @@
   <!-- ── Hero ────────────────────────────────────────────── -->
   <section id="top" class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-b from-sand to-cream"></div>
-    <div class="relative max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
-      <span class="inline-block text-xs font-600 tracking-widest uppercase text-rust bg-terra/10 px-3 py-1 rounded-full mb-6">
-        Programme beta
-      </span>
-      <h1 class="font-serif text-5xl sm:text-6xl font-600 leading-[1.05] tracking-tight">
-        Votre styliste personnel,<br />toujours avec vous.
-      </h1>
-      <p class="mt-6 text-lg text-muted max-w-xl mx-auto">
-        Vestia gère votre garde-robe et compose des tenues sur mesure grâce à l'IA — adaptées à l'occasion, à la météo et à votre style.
-      </p>
-      <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
-        <a href="#features" class="font-600 text-white bg-rust hover:bg-terra transition px-6 py-3 rounded-full">
-          Découvrir l'app
-        </a>
-        <a href="#feedback" class="font-600 text-ink bg-white border border-beige hover:border-terra transition px-6 py-3 rounded-full">
-          Donner mon avis
-        </a>
+    <!-- halo décoratif -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-terra/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-20 lg:pt-24 lg:pb-28
+                grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+      <!-- Colonne texte -->
+      <div class="text-center lg:text-left">
+        <span class="inline-block text-xs font-600 tracking-widest uppercase text-rust bg-terra/10 px-3 py-1 rounded-full mb-6">
+          Programme beta
+        </span>
+        <h1 class="font-serif text-5xl sm:text-6xl font-600 leading-[1.05] tracking-tight">
+          Votre styliste personnel,<br />toujours avec vous.
+        </h1>
+        <p class="mt-6 text-lg text-muted max-w-xl mx-auto lg:mx-0">
+          Vestia gère votre garde-robe et compose des tenues sur mesure grâce à l'IA — adaptées à l'occasion, à la météo et à votre style.
+        </p>
+        <div class="mt-9 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+          <a href="#features" class="font-600 text-white bg-rust hover:bg-terra transition px-6 py-3 rounded-full">
+            Découvrir l'app
+          </a>
+          <a href="#feedback" class="font-600 text-ink bg-white border border-beige hover:border-terra transition px-6 py-3 rounded-full">
+            Donner mon avis
+          </a>
+        </div>
+        <p class="mt-5 text-xs text-muted">Merci de tester Vestia 🙏 Vos retours façonnent l'application.</p>
       </div>
-      <p class="mt-5 text-xs text-muted">Merci de tester Vestia 🙏 Vos retours façonnent l'application.</p>
+
+      <!-- Colonne téléphones -->
+      <div class="relative h-[440px] sm:h-[540px] lg:h-[560px] flex items-center justify-center select-none">
+        <!-- Téléphone gauche (accueil) -->
+        <div class="phone absolute z-10 w-[150px] sm:w-[185px] -translate-x-[58%] sm:-translate-x-[62%] -rotate-6 -mb-6">
+          <img src="./screenshots/app-welcome.jpg" alt="Écran d'accueil de Vestia" class="phone-img" loading="lazy" />
+        </div>
+        <!-- Téléphone droit (garde-robe) -->
+        <div class="phone absolute z-10 w-[150px] sm:w-[185px] translate-x-[58%] sm:translate-x-[62%] rotate-6 mt-10">
+          <img src="./screenshots/app-wardrobe.jpg" alt="Garde-robe dans Vestia" class="phone-img" loading="lazy" />
+        </div>
+        <!-- Téléphone central (tenue générée) -->
+        <div class="phone relative z-20 w-[185px] sm:w-[225px]">
+          <img src="./screenshots/app-outfit.jpg" alt="Tenue générée par Vestia" class="phone-img" />
+        </div>
+      </div>
     </div>
   </section>
 
