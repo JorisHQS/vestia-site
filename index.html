@@ -74,14 +74,20 @@
         <span class="font-serif text-xl font-600 tracking-tight">Vestia <span class="text-muted font-400">(beta)</span></span>
       </a>
       <div class="hidden sm:flex items-center gap-7 text-sm font-500 text-muted">
-        <a href="#features" class="hover:text-ink transition">Fonctionnalités</a>
-        <a href="#install" class="hover:text-ink transition">Installation</a>
-        <a href="#releases" class="hover:text-ink transition">Releases</a>
-        <a href="#feedback" class="hover:text-ink transition">Retours</a>
+        <a href="#features" class="hover:text-ink transition" data-i18n="nav.features">Fonctionnalités</a>
+        <a href="#install" class="hover:text-ink transition" data-i18n="nav.install">Installation</a>
+        <a href="#releases" class="hover:text-ink transition" data-i18n="nav.releases">Releases</a>
+        <a href="#feedback" class="hover:text-ink transition" data-i18n="nav.feedback">Retours</a>
       </div>
-      <a href="#feedback" class="text-sm font-600 text-white bg-rust hover:bg-terra transition px-4 py-2 rounded-full">
-        Signaler un bug
-      </a>
+      <div class="flex items-center gap-2">
+        <button id="lang-toggle" type="button" aria-label="Switch to English"
+                class="text-sm font-600 text-muted hover:text-ink border border-beige hover:border-terra transition px-3 py-2 rounded-full">
+          EN
+        </button>
+        <a href="#feedback" class="text-sm font-600 text-white bg-rust hover:bg-terra transition px-4 py-2 rounded-full" data-i18n="nav.reportBug">
+          Signaler un bug
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -96,24 +102,24 @@
 
       <!-- Colonne texte -->
       <div class="text-center lg:text-left">
-        <span class="inline-block text-xs font-600 tracking-widest uppercase text-rust bg-terra/10 px-3 py-1 rounded-full mb-6">
+        <span class="inline-block text-xs font-600 tracking-widest uppercase text-rust bg-terra/10 px-3 py-1 rounded-full mb-6" data-i18n="hero.badge">
           Programme beta
         </span>
-        <h1 class="font-serif text-5xl sm:text-6xl font-600 leading-[1.05] tracking-tight">
+        <h1 class="font-serif text-5xl sm:text-6xl font-600 leading-[1.05] tracking-tight" data-i18n="hero.title">
           Votre styliste personnel,<br />toujours avec vous.
         </h1>
-        <p class="mt-6 text-lg text-muted max-w-xl mx-auto lg:mx-0">
+        <p class="mt-6 text-lg text-muted max-w-xl mx-auto lg:mx-0" data-i18n="hero.subtitle">
           Vestia gère votre garde-robe et compose des tenues sur mesure grâce à l'IA — adaptées à l'occasion, à la météo et à votre style.
         </p>
         <div class="mt-9 flex flex-wrap items-center justify-center lg:justify-start gap-3">
-          <a href="#features" class="font-600 text-white bg-rust hover:bg-terra transition px-6 py-3 rounded-full">
+          <a href="#features" class="font-600 text-white bg-rust hover:bg-terra transition px-6 py-3 rounded-full" data-i18n="hero.cta1">
             Découvrir l'app
           </a>
-          <a href="#feedback" class="font-600 text-ink bg-white border border-beige hover:border-terra transition px-6 py-3 rounded-full">
+          <a href="#feedback" class="font-600 text-ink bg-white border border-beige hover:border-terra transition px-6 py-3 rounded-full" data-i18n="hero.cta2">
             Donner mon avis
           </a>
         </div>
-        <p class="mt-5 text-xs text-muted">Merci de tester Vestia 🙏 Vos retours façonnent l'application.</p>
+        <p class="mt-5 text-xs text-muted" data-i18n="hero.note">Merci de tester Vestia 🙏 Vos retours façonnent l'application.</p>
       </div>
 
       <!-- Colonne téléphones -->
@@ -137,45 +143,45 @@
   <!-- ── Features ────────────────────────────────────────── -->
   <section id="features" class="max-w-5xl mx-auto px-6 py-20">
     <div class="mb-12">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra">Ce que fait Vestia</h2>
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra" data-i18n="features.title">Ce que fait Vestia</h2>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       <!-- card -->
       <div class="fade-in bg-white rounded-2xl border border-beige p-6 hover:shadow-lg hover:shadow-terra/5 transition">
         <div class="w-11 h-11 rounded-xl bg-terra/10 flex items-center justify-center text-2xl mb-4">📸</div>
-        <h3 class="font-serif text-lg font-600 mb-2">Ajout intelligent</h3>
-        <p class="text-sm text-muted leading-relaxed">Photographiez un vêtement : l'IA reconnaît la catégorie et les couleurs, et le détoure automatiquement sur fond blanc.</p>
+        <h3 class="font-serif text-lg font-600 mb-2" data-i18n="feature1.title">Ajout intelligent</h3>
+        <p class="text-sm text-muted leading-relaxed" data-i18n="feature1.desc">Photographiez un vêtement : l'IA reconnaît la catégorie et les couleurs, et le détoure automatiquement sur fond blanc.</p>
       </div>
 
       <div class="fade-in bg-white rounded-2xl border border-beige p-6 hover:shadow-lg hover:shadow-terra/5 transition">
         <div class="w-11 h-11 rounded-xl bg-terra/10 flex items-center justify-center text-2xl mb-4">👗</div>
-        <h3 class="font-serif text-lg font-600 mb-2">Génération de tenues</h3>
-        <p class="text-sm text-muted leading-relaxed">L'IA compose une tenue complète et harmonieuse à partir de votre garde-robe, en suivant de vraies règles de style.</p>
+        <h3 class="font-serif text-lg font-600 mb-2" data-i18n="feature2.title">Génération de tenues</h3>
+        <p class="text-sm text-muted leading-relaxed" data-i18n="feature2.desc">L'IA compose une tenue complète et harmonieuse à partir de votre garde-robe, en suivant de vraies règles de style.</p>
       </div>
 
       <div class="fade-in bg-white rounded-2xl border border-beige p-6 hover:shadow-lg hover:shadow-terra/5 transition">
         <div class="w-11 h-11 rounded-xl bg-terra/10 flex items-center justify-center text-2xl mb-4">🌦️</div>
-        <h3 class="font-serif text-lg font-600 mb-2">Adaptée à la météo</h3>
-        <p class="text-sm text-muted leading-relaxed">Indiquez le lieu, la date et l'heure : la tenue s'adapte à la température et au risque de pluie.</p>
+        <h3 class="font-serif text-lg font-600 mb-2" data-i18n="feature3.title">Adaptée à la météo</h3>
+        <p class="text-sm text-muted leading-relaxed" data-i18n="feature3.desc">Indiquez le lieu, la date et l'heure : la tenue s'adapte à la température et au risque de pluie.</p>
       </div>
 
       <div class="fade-in bg-white rounded-2xl border border-beige p-6 hover:shadow-lg hover:shadow-terra/5 transition">
         <div class="w-11 h-11 rounded-xl bg-terra/10 flex items-center justify-center text-2xl mb-4">🎯</div>
-        <h3 class="font-serif text-lg font-600 mb-2">Selon l'occasion</h3>
-        <p class="text-sm text-muted leading-relaxed">Bureau, weekend, soirée, sport… Choisissez le contexte et la tenue ajuste son niveau de formalité.</p>
+        <h3 class="font-serif text-lg font-600 mb-2" data-i18n="feature4.title">Selon l'occasion</h3>
+        <p class="text-sm text-muted leading-relaxed" data-i18n="feature4.desc">Bureau, weekend, soirée, sport… Choisissez le contexte et la tenue ajuste son niveau de formalité.</p>
       </div>
 
       <div class="fade-in bg-white rounded-2xl border border-beige p-6 hover:shadow-lg hover:shadow-terra/5 transition">
         <div class="w-11 h-11 rounded-xl bg-terra/10 flex items-center justify-center text-2xl mb-4">🖼️</div>
-        <h3 class="font-serif text-lg font-600 mb-2">Aperçu visuel</h3>
-        <p class="text-sm text-muted leading-relaxed">Visualisez chaque tenue en flat-lay et portée par un mannequin correspondant à votre profil.</p>
+        <h3 class="font-serif text-lg font-600 mb-2" data-i18n="feature5.title">Aperçu visuel</h3>
+        <p class="text-sm text-muted leading-relaxed" data-i18n="feature5.desc">Visualisez chaque tenue en flat-lay et portée par un mannequin correspondant à votre profil.</p>
       </div>
 
       <div class="fade-in bg-white rounded-2xl border border-beige p-6 hover:shadow-lg hover:shadow-terra/5 transition">
         <div class="w-11 h-11 rounded-xl bg-terra/10 flex items-center justify-center text-2xl mb-4">🧥</div>
-        <h3 class="font-serif text-lg font-600 mb-2">Garde-robe organisée</h3>
-        <p class="text-sm text-muted leading-relaxed">Retrouvez toutes vos pièces, filtrez par type et saison, et suivez vos statistiques de collection.</p>
+        <h3 class="font-serif text-lg font-600 mb-2" data-i18n="feature6.title">Garde-robe organisée</h3>
+        <p class="text-sm text-muted leading-relaxed" data-i18n="feature6.desc">Retrouvez toutes vos pièces, filtrez par type et saison, et suivez vos statistiques de collection.</p>
       </div>
     </div>
   </section>
@@ -184,9 +190,9 @@
   <section id="install" class="bg-sand/60 border-y border-beige">
     <div class="max-w-3xl mx-auto px-6 py-20">
       <div class="mb-4">
-        <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra">Installer Vestia</h2>
+        <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra" data-i18n="install.title">Installer Vestia</h2>
       </div>
-      <p class="text-muted mb-12 max-w-xl">
+      <p class="text-muted mb-12 max-w-xl" data-i18n="install.intro">
         Vestia se teste via <strong class="text-ink font-600">Expo Go</strong>, une app gratuite. Compte ~5 minutes, une seule fois. Suis les étapes :
       </p>
 
@@ -196,8 +202,8 @@
         <li class="fade-in bg-white rounded-2xl border border-beige p-6 flex gap-5">
           <span class="shrink-0 w-9 h-9 rounded-full bg-rust text-white font-600 flex items-center justify-center">1</span>
           <div class="flex-1">
-            <h3 class="font-serif text-lg font-600 mb-1.5">Installe l'app Expo Go</h3>
-            <p class="text-sm text-muted leading-relaxed mb-4">
+            <h3 class="font-serif text-lg font-600 mb-1.5" data-i18n="step1.title">Installe l'app Expo Go</h3>
+            <p class="text-sm text-muted leading-relaxed mb-4" data-i18n="step1.desc">
               Cherche « Expo Go » dans le store de ton téléphone, ou utilise les liens directs ci-dessous.
             </p>
             <div class="flex flex-wrap gap-3">
@@ -217,8 +223,8 @@
         <li class="fade-in bg-white rounded-2xl border border-beige p-6 flex gap-5">
           <span class="shrink-0 w-9 h-9 rounded-full bg-rust text-white font-600 flex items-center justify-center">2</span>
           <div class="flex-1">
-            <h3 class="font-serif text-lg font-600 mb-1.5">Crée un compte Expo</h3>
-            <p class="text-sm text-muted leading-relaxed">
+            <h3 class="font-serif text-lg font-600 mb-1.5" data-i18n="step2.title">Crée un compte Expo</h3>
+            <p class="text-sm text-muted leading-relaxed" data-i18n="step2.desc">
               Ouvre Expo Go, appuie sur <strong class="text-ink">« Sign up »</strong> et crée un compte gratuit (nom d'utilisateur, e-mail, mot de passe). C'est rapide.
             </p>
           </div>
@@ -228,8 +234,8 @@
         <li class="fade-in bg-white rounded-2xl border border-beige p-6 flex gap-5">
           <span class="shrink-0 w-9 h-9 rounded-full bg-rust text-white font-600 flex items-center justify-center">3</span>
           <div class="flex-1">
-            <h3 class="font-serif text-lg font-600 mb-1.5">Envoie-moi ton e-mail Expo</h3>
-            <p class="text-sm text-muted leading-relaxed">
+            <h3 class="font-serif text-lg font-600 mb-1.5" data-i18n="step3.title">Envoie-moi ton e-mail Expo</h3>
+            <p class="text-sm text-muted leading-relaxed" data-i18n="step3.desc">
               Communique-moi l'e-mail utilisé pour ton compte (SMS, WhatsApp…). Je t'ajoute à l'organisation pour débloquer l'accès au projet.
             </p>
           </div>
@@ -239,8 +245,8 @@
         <li class="fade-in bg-white rounded-2xl border border-beige p-6 flex gap-5">
           <span class="shrink-0 w-9 h-9 rounded-full bg-rust text-white font-600 flex items-center justify-center">4</span>
           <div class="flex-1">
-            <h3 class="font-serif text-lg font-600 mb-1.5">Accepte l'invitation</h3>
-            <p class="text-sm text-muted leading-relaxed">
+            <h3 class="font-serif text-lg font-600 mb-1.5" data-i18n="step4.title">Accepte l'invitation</h3>
+            <p class="text-sm text-muted leading-relaxed" data-i18n="step4.desc">
               Tu recevras un e-mail d'invitation Expo. Ouvre-le et clique sur <strong class="text-ink">« Accepter »</strong>.
             </p>
           </div>
@@ -250,8 +256,8 @@
         <li class="fade-in bg-white rounded-2xl border border-beige p-6 flex gap-5">
           <span class="shrink-0 w-9 h-9 rounded-full bg-rust text-white font-600 flex items-center justify-center">5</span>
           <div class="flex-1">
-            <h3 class="font-serif text-lg font-600 mb-1.5">Lance Vestia 🎉</h3>
-            <p class="text-sm text-muted leading-relaxed">
+            <h3 class="font-serif text-lg font-600 mb-1.5" data-i18n="step5.title">Lance Vestia 🎉</h3>
+            <p class="text-sm text-muted leading-relaxed" data-i18n="step5.desc">
               Dans Expo Go, connecte-toi (<strong class="text-ink">« Log in »</strong> en haut à droite) et choisis l'organisation <strong class="text-ink">jhqs</strong>. Le projet <strong class="text-ink">Vestia POC</strong> apparaît sur l'accueil — appuie dessus pour ouvrir l'app.
             </p>
           </div>
@@ -261,7 +267,7 @@
       <!-- Note -->
       <div class="mt-8 flex items-start gap-3 bg-terra/10 border border-terra/20 rounded-2xl p-5">
         <span class="text-xl leading-none">💡</span>
-        <p class="text-sm text-ink/80 leading-relaxed">
+        <p class="text-sm text-ink/80 leading-relaxed" data-i18n="install.note">
           <strong class="font-600">À l'ouverture de l'app</strong>, l'écran de connexion n'est pas encore actif : tu peux entrer <strong class="font-600">n'importe quel e-mail et mot de passe</strong> pour entrer. Bon test !
         </p>
       </div>
@@ -272,26 +278,27 @@
   <section id="releases" class="bg-cream">
     <div class="max-w-3xl mx-auto px-6 py-20">
       <div class="mb-12">
-        <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra">Notes de version</h2>
-        <p class="mt-4 text-muted text-sm">L'historique des dernières mises à jour livrées en beta.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra" data-i18n="releases.title">Notes de version</h2>
+        <p class="mt-4 text-muted text-sm" data-i18n="releases.subtitle">L'historique des dernières mises à jour livrées en beta.</p>
       </div>
 
       <ol class="relative border-l-2 border-beige ml-3 space-y-10">
 
         <!-- RELEASE TEMPLATE — copiez ce bloc pour chaque nouvelle version.
-             Garder le DÉTAIL des 5 dernières versions seulement (supprimer la plus ancienne). -->
+             Garder le DÉTAIL des 5 dernières versions seulement (supprimer la plus ancienne).
+             NB : les notes de version restent en français (le sélecteur FR/EN ne les traduit pas). -->
         <li class="relative pl-8">
           <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-rust ring-4 ring-sand"></span>
           <div class="flex items-baseline gap-3 flex-wrap">
             <h3 class="font-serif text-xl font-600">v0.0.44</h3>
-            <span class="text-xs font-600 text-rust bg-terra/10 px-2 py-0.5 rounded-full">Dernière version</span>
+            <span class="text-xs font-600 text-rust bg-terra/10 px-2 py-0.5 rounded-full" data-i18n="releases.latest">Dernière version</span>
             <time class="text-xs font-500 text-ink/70 bg-beige px-2.5 py-0.5 rounded-full">01 juillet 2026</time>
           </div>
           <ul class="mt-3 space-y-1.5 text-sm text-muted list-disc list-inside marker:text-terra">
             <li>Rajoute plusieurs vêtements en même temps.</li>
           </ul>
         </li>
-        
+
              <li class="relative pl-8">
           <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-terra/40 ring-4 ring-sand"></span>
           <div class="flex items-baseline gap-3 flex-wrap">
@@ -347,34 +354,34 @@
 
   <!-- ── Feedback ────────────────────────────────────────── -->
   <section id="feedback" class="max-w-3xl mx-auto px-6 py-20 text-center">
-    <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra center">Un bug ? Une idée ?</h2>
-    <p class="mt-5 text-muted max-w-lg mx-auto">
+    <h2 class="font-serif text-3xl sm:text-4xl font-600 underline-terra center" data-i18n="feedback.title">Un bug ? Une idée ?</h2>
+    <p class="mt-5 text-muted max-w-lg mx-auto" data-i18n="feedback.subtitle">
       Vos retours sont précieux. Signalez un bug, suggérez une amélioration ou partagez simplement votre ressenti — tout est utile pour faire grandir Vestia.
     </p>
 
     <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpZ6ispZ8LZU1iWzg6uA8gKXfz5fxCFb7SOxSSzzkfGBqk6w/viewform?usp=header" target="_blank" rel="noopener"
-         class="font-600 text-white bg-rust hover:bg-terra transition px-7 py-3.5 rounded-full text-lg">
+         class="font-600 text-white bg-rust hover:bg-terra transition px-7 py-3.5 rounded-full text-lg" data-i18n="feedback.cta">
         Ouvrir le formulaire de retour
       </a>
     </div>
-    <p class="mt-5 text-xs text-muted">Le formulaire s'ouvre dans un nouvel onglet. Aucune réponse n'est obligatoire.</p>
+    <p class="mt-5 text-xs text-muted" data-i18n="feedback.note">Le formulaire s'ouvre dans un nouvel onglet. Aucune réponse n'est obligatoire.</p>
 
     <div class="mt-12 grid sm:grid-cols-3 gap-4 text-left">
       <div class="bg-white rounded-xl border border-beige p-5">
         <div class="text-xl mb-2">🐞</div>
-        <h3 class="font-600 text-sm mb-1">Décrivez le bug</h3>
-        <p class="text-xs text-muted leading-relaxed">Que faisiez-vous ? Qu'attendiez-vous ? Que s'est-il passé ?</p>
+        <h3 class="font-600 text-sm mb-1" data-i18n="fb1.title">Décrivez le bug</h3>
+        <p class="text-xs text-muted leading-relaxed" data-i18n="fb1.desc">Que faisiez-vous ? Qu'attendiez-vous ? Que s'est-il passé ?</p>
       </div>
       <div class="bg-white rounded-xl border border-beige p-5">
         <div class="text-xl mb-2">📱</div>
-        <h3 class="font-600 text-sm mb-1">Votre appareil</h3>
-        <p class="text-xs text-muted leading-relaxed">Modèle de téléphone et version de l'app (visible dans « À propos »).</p>
+        <h3 class="font-600 text-sm mb-1" data-i18n="fb2.title">Votre appareil</h3>
+        <p class="text-xs text-muted leading-relaxed" data-i18n="fb2.desc">Modèle de téléphone et version de l'app (visible dans « À propos »).</p>
       </div>
       <div class="bg-white rounded-xl border border-beige p-5">
         <div class="text-xl mb-2">📷</div>
-        <h3 class="font-600 text-sm mb-1">Une capture</h3>
-        <p class="text-xs text-muted leading-relaxed">Si possible, joignez une capture d'écran — ça aide beaucoup !</p>
+        <h3 class="font-600 text-sm mb-1" data-i18n="fb3.title">Une capture</h3>
+        <p class="text-xs text-muted leading-relaxed" data-i18n="fb3.desc">Si possible, joignez une capture d'écran — ça aide beaucoup !</p>
       </div>
     </div>
   </section>
@@ -385,13 +392,112 @@
       <div class="flex items-center gap-2.5">
         <img src="./logo.svg" alt="Logo Vestia" class="w-7 h-7 rounded-lg" />
         <span class="font-serif font-600">Vestia</span>
-        <span class="text-xs text-muted">· Programme beta</span>
+        <span class="text-xs text-muted" data-i18n="footer.beta">· Programme beta</span>
       </div>
-      <p class="text-xs text-muted">© 2026 Vestia. Merci de faire partie de l'aventure.</p>
+      <p class="text-xs text-muted" data-i18n="footer.copy">© 2026 Vestia. Merci de faire partie de l'aventure.</p>
     </div>
   </footer>
 
   <script>
+    // ── Bilingue FR / EN ─────────────────────────────────────────────
+    // Le français est la source (contenu du HTML). On ne maintient qu'un
+    // dictionnaire anglais ; les clés sans traduction restent en français.
+    const EN = {
+      'nav.features': 'Features',
+      'nav.install': 'Install',
+      'nav.releases': 'Releases',
+      'nav.feedback': 'Feedback',
+      'nav.reportBug': 'Report a bug',
+
+      'hero.badge': 'Beta program',
+      'hero.title': 'Your personal stylist,<br />always with you.',
+      'hero.subtitle': 'Vestia manages your wardrobe and puts together tailor-made outfits with AI — suited to the occasion, the weather and your style.',
+      'hero.cta1': 'Discover the app',
+      'hero.cta2': 'Share feedback',
+      'hero.note': 'Thanks for testing Vestia 🙏 Your feedback shapes the app.',
+
+      'features.title': 'What Vestia does',
+      'feature1.title': 'Smart add',
+      'feature1.desc': 'Photograph a garment: the AI recognizes its category and colors, and automatically cuts it out on a white background.',
+      'feature2.title': 'Outfit generation',
+      'feature2.desc': 'The AI builds a complete, harmonious outfit from your wardrobe, following real styling rules.',
+      'feature3.title': 'Weather-aware',
+      'feature3.desc': 'Enter the place, date and time: the outfit adapts to the temperature and the chance of rain.',
+      'feature4.title': 'For the occasion',
+      'feature4.desc': 'Work, weekend, night out, sport… Pick the context and the outfit adjusts its level of formality.',
+      'feature5.title': 'Visual preview',
+      'feature5.desc': 'See each outfit as a flat-lay and worn by a model matching your profile.',
+      'feature6.title': 'Organized wardrobe',
+      'feature6.desc': 'Find all your pieces, filter by type and season, and track your collection stats.',
+
+      'install.title': 'Install Vestia',
+      'install.intro': 'Vestia is tested through <strong class="text-ink font-600">Expo Go</strong>, a free app. Count ~5 minutes, once. Follow the steps:',
+      'step1.title': 'Install the Expo Go app',
+      'step1.desc': 'Search for “Expo Go” in your phone\'s store, or use the direct links below.',
+      'step2.title': 'Create an Expo account',
+      'step2.desc': 'Open Expo Go, tap <strong class="text-ink">“Sign up”</strong> and create a free account (username, email, password). It\'s quick.',
+      'step3.title': 'Send me your Expo email',
+      'step3.desc': 'Send me the email used for your account (SMS, WhatsApp…). I\'ll add you to the organization to unlock access to the project.',
+      'step4.title': 'Accept the invitation',
+      'step4.desc': 'You\'ll receive an Expo invitation email. Open it and click <strong class="text-ink">“Accept”</strong>.',
+      'step5.title': 'Launch Vestia 🎉',
+      'step5.desc': 'In Expo Go, log in (<strong class="text-ink">“Log in”</strong> top right) and choose the <strong class="text-ink">jhqs</strong> organization. The <strong class="text-ink">Vestia POC</strong> project appears on the home screen — tap it to open the app.',
+      'install.note': '<strong class="font-600">When the app opens</strong>, the login screen isn\'t active yet: you can enter <strong class="font-600">any email and password</strong> to get in. Enjoy testing!',
+
+      'releases.title': 'Release notes',
+      'releases.subtitle': 'The history of the latest updates shipped in beta.',
+      'releases.latest': 'Latest version',
+
+      'feedback.title': 'A bug? An idea?',
+      'feedback.subtitle': 'Your feedback is invaluable. Report a bug, suggest an improvement or simply share how you feel — it all helps Vestia grow.',
+      'feedback.cta': 'Open the feedback form',
+      'feedback.note': 'The form opens in a new tab. No answer is required.',
+      'fb1.title': 'Describe the bug',
+      'fb1.desc': 'What were you doing? What did you expect? What happened?',
+      'fb2.title': 'Your device',
+      'fb2.desc': 'Phone model and app version (shown under “About”).',
+      'fb3.title': 'A screenshot',
+      'fb3.desc': 'If possible, attach a screenshot — it helps a lot!',
+
+      'footer.beta': '· Beta program',
+      'footer.copy': '© 2026 Vestia. Thanks for being part of the journey.',
+    };
+
+    const TITLES = {
+      fr: 'Vestia — Votre styliste personnel',
+      en: 'Vestia — Your personal stylist',
+    };
+
+    const nodes = document.querySelectorAll('[data-i18n]');
+    // Capture le français d'origine pour pouvoir revenir en arrière fidèlement.
+    nodes.forEach((el) => { el.dataset.fr = el.innerHTML; });
+
+    const langBtn = document.getElementById('lang-toggle');
+
+    function applyLang(lang) {
+      document.documentElement.lang = lang;
+      nodes.forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (lang === 'en') {
+          if (EN[key] != null) el.innerHTML = EN[key];
+        } else if (el.dataset.fr != null) {
+          el.innerHTML = el.dataset.fr;
+        }
+      });
+      document.title = TITLES[lang] || TITLES.fr;
+      langBtn.textContent = lang === 'en' ? 'FR' : 'EN';
+      langBtn.setAttribute('aria-label', lang === 'en' ? 'Passer en français' : 'Switch to English');
+      try { localStorage.setItem('vestia_lang', lang); } catch (_) {}
+    }
+
+    let saved = 'fr';
+    try { saved = localStorage.getItem('vestia_lang') === 'en' ? 'en' : 'fr'; } catch (_) {}
+    applyLang(saved);
+
+    langBtn.addEventListener('click', () => {
+      applyLang(document.documentElement.lang === 'fr' ? 'en' : 'fr');
+    });
+
     // Animation d'apparition au scroll
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('show'); });
